@@ -125,7 +125,16 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/KakaoTalk_Photo_2025-08-04-20-02-17_02_.jpg"
+            alt="대표사진"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -182,7 +191,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">💰</span>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">최저가 보장</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">신뢰있는 최저가 보장</h3>
               <p className="text-gray-600">업계 최저가 120% 보장</p>
             </motion.div>
 
