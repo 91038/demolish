@@ -140,12 +140,15 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
               철거매니아가 <span className="text-blue-600">최저가</span>를 보장합니다
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-600">
+            <p className="text-xl md:text-2xl mb-8 text-gray-600">
               전문 철거 서비스의 시작, 믿고 맡겨주세요
             </p>
+            <div className="bg-red-600 text-white rounded-xl p-4 mb-8 max-w-2xl mx-auto animate-pulse">
+              <p className="text-2xl md:text-3xl font-bold">🎯 폐업지원금 600만원+@ 지원!</p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => window.location.href = 'tel:010-4316-1348'}
@@ -174,10 +177,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">
               왜 철거매니아를 선택해야 할까요?
             </h2>
-            <p className="text-gray-600">믿을 수 있는 철거 전문가들이 함께합니다</p>
+            <p className="text-lg text-gray-600">믿을 수 있는 철거 전문가들이 함께합니다</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -191,8 +194,8 @@ export default function Home() {
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">💰</span>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">신뢰있는 최저가 보장</h3>
-              <p className="text-gray-600">업계 최저가 120% 보장</p>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900">신뢰있는 최저가 보장</h3>
+              <p className="text-lg text-gray-600">업계 최저가 120% 보장</p>
             </motion.div>
 
             <motion.div
@@ -205,8 +208,8 @@ export default function Home() {
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">👷</span>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">전문 인력</h3>
-              <p className="text-gray-600">120명의 전문 인력 상주</p>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900">전문 인력</h3>
+              <p className="text-lg text-gray-600">120명의 전문 인력 상주</p>
             </motion.div>
 
             <motion.div
@@ -219,8 +222,8 @@ export default function Home() {
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🚛</span>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">폐기물 처리</h3>
-              <p className="text-gray-600">공동 처리로 비용 절감</p>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900">폐기물 처리</h3>
+              <p className="text-lg text-gray-600">공동 처리로 비용 절감</p>
             </motion.div>
           </div>
         </div>
@@ -236,10 +239,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">
               제공 서비스
             </h2>
-            <p className="text-gray-600">철거부터 폐기물 처리까지 원스톱 서비스</p>
+            <p className="text-lg text-gray-600">철거부터 폐기물 처리까지 원스톱 서비스</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -250,8 +253,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-xl shadow-lg"
             >
-              <h3 className="text-xl font-bold mb-4 text-gray-900">건물 철거</h3>
-              <ul className="space-y-2 text-gray-600">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">건물 철거</h3>
+              <ul className="space-y-2 text-lg text-gray-600">
                 <li>✓ 주택, 상가, 공장 철거</li>
                 <li>✓ 안전한 작업 진행</li>
                 <li>✓ 철거 허가 대행</li>
@@ -265,8 +268,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-xl shadow-lg"
             >
-              <h3 className="text-xl font-bold mb-4 text-gray-900">인테리어 철거</h3>
-              <ul className="space-y-2 text-gray-600">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">인테리어 철거</h3>
+              <ul className="space-y-2 text-lg text-gray-600">
                 <li>✓ 상가, 사무실 인테리어 철거</li>
                 <li>✓ 깨끗한 마무리</li>
                 <li>✓ 당일 작업 가능</li>
@@ -280,8 +283,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-xl shadow-lg"
             >
-              <h3 className="text-xl font-bold mb-4 text-gray-900">폐기물 처리</h3>
-              <ul className="space-y-2 text-gray-600">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">폐기물 처리</h3>
+              <ul className="space-y-2 text-lg text-gray-600">
                 <li>✓ 건설 폐기물 처리</li>
                 <li>✓ 분리수거 및 재활용</li>
                 <li>✓ 합법적 처리</li>
@@ -295,11 +298,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-xl shadow-lg"
             >
-              <h3 className="text-xl font-bold mb-4 text-gray-900">폐업 컨설팅</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>✓ 폐업 지원금 컨설팅</li>
-                <li>✓ 최대 400만원+ 지원</li>
-                <li>✓ 빠른 처리 (평균 3주 단축)</li>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">폐업 컨설팅</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="text-lg">✓ 폐업 지원금 컨설팅</li>
+                <li className="text-2xl font-bold text-red-600">✓ 폐업지원금 600만원+@ 지원</li>
+                <li className="text-lg">✓ 빠른 처리 (평균 3주 단축)</li>
               </ul>
             </motion.div>
           </div>
@@ -316,10 +319,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">
               간단한 진행 과정
             </h2>
-            <p className="text-gray-600">3단계로 끝나는 철거 서비스</p>
+            <p className="text-lg text-gray-600">3단계로 끝나는 철거 서비스</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -339,8 +342,8 @@ export default function Home() {
                 <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
+                <h3 className="text-2xl font-bold mb-2 text-gray-900">{item.title}</h3>
+                <p className="text-lg text-gray-600">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -357,10 +360,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">
               시공 사례
             </h2>
-            <p className="text-gray-600">실제 진행한 철거 현장입니다</p>
+            <p className="text-lg text-gray-600">실제 진행한 철거 현장입니다</p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
@@ -401,12 +404,15 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
               지금 바로 상담받으세요
             </h2>
-            <p className="text-lg mb-8 opacity-90">
+            <p className="text-xl mb-4 opacity-90">
               전문가가 친절하게 상담해드립니다
             </p>
+            <div className="bg-yellow-400 text-gray-900 rounded-xl p-4 mb-8 max-w-2xl mx-auto animate-bounce">
+              <p className="text-2xl md:text-3xl font-bold">💰 폐업지원금 600만원+@ 지원 가능!</p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => window.location.href = 'tel:010-4316-1348'}
