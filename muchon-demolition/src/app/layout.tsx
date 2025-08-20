@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,20 +25,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Danggeun Market Code */}
-        <script src="https://karrot-pixel.business.daangn.com/0.4/karrot-pixel.umd.js"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.karrotPixel.init('1755422197599400001');
-            window.karrotPixel.track('ViewPage');
-          `
-        }} />
-        {/* End Danggeun Market Code */}
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Danggeun Market Code */}
+        <Script
+          src="https://karrot-pixel.business.daangn.com/0.4/karrot-pixel.umd.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="karrot-pixel-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.karrotPixel.init('1755422197599400001');
+              window.karrotPixel.track('ViewPage');
+            `
+          }}
+        />
+        {/* End Danggeun Market Code */}
         {children}
       </body>
     </html>
